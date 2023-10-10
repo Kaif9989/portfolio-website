@@ -1,0 +1,90 @@
+@media (max-width: 665px) {
+    .navbar nav ul {
+      top: 0%;
+      z-index: 1;
+      left: -100%;
+      width: 100%;
+      height: 100vh;
+      position: absolute;
+      align-items: center;
+      background: #010910;
+      flex-direction: column;
+      justify-content: center;
+      transition: left 0.4s ease-in-out;
+    }
+  
+    .navbar nav ul.show {
+      left: 0;
+    }
+  
+    .navbar nav ul li {
+      font-size: 1.2rem;
+      margin: clamp(1rem, 4vh, 1.8rem) 0;
+    }
+  
+    .menuBtn {
+      display: flex;
+    }
+  
+    .services-section .cards {
+      display: grid;
+      grid-template-columns: auto auto;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .services-section .cards {
+      display: grid;
+      overflow-x: hidden;
+      margin: 0 1rem;
+      grid-template-columns: auto;
+    }
+  
+    .services-section .cards .card {
+      width: 20rem;
+      max-width: 20rem;
+    }
+  }
+  
+  @media (max-width: 800px) {
+    .about-section {
+      flex-wrap: wrap;
+    }
+  
+    .skillContainer {
+      width: calc(100% - 3rem);
+    }
+  
+    .about-section .sectionTitle {
+      padding-top: 3.8rem;
+    }
+  
+    .about-section .sectionTitle {
+      text-align: center;
+      font-size: clamp(3rem, 4vw, 5rem);
+    }
+  
+    .about-section :is(.skills, .details) {
+      height: auto;
+    }
+  
+    .about-section {
+      height: 100%;
+    }
+  
+    .welcomeAction button:last-child {
+      padding: 0.4rem 1rem !important;
+    }
+  
+    .about-section .image {
+      height: 70vh;
+      margin-top: 3rem;
+      margin-bottom: 2rem;
+      background-size: 25rem;
+      background-position-y: 0%;
+    }
+  
+    .about-section .details {
+      padding-top: 1rem;
+    }
+  }
